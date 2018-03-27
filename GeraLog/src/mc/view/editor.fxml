@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="220.0" prefWidth="490.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mc.controller.EditorController">
+   <children>
+      <GridPane prefHeight="180.0" prefWidth="480.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="115.0" minWidth="10.0" prefWidth="78.0" />
+            <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="214.0" minWidth="10.0" prefWidth="209.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="108.0" minWidth="10.0" prefWidth="12.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="154.0" minWidth="10.0" prefWidth="38.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="169.0" minWidth="10.0" prefWidth="142.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="97.0" minHeight="10.0" prefHeight="97.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="protocolTF" prefHeight="31.0" prefWidth="212.0" GridPane.columnIndex="1" />
+            <DatePicker fx:id="dateDP" prefHeight="31.0" prefWidth="141.0" GridPane.columnIndex="4" />
+            <ComboBox fx:id="corporationCBB" prefHeight="31.0" prefWidth="176.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextArea fx:id="descriptionTA" prefHeight="57.0" prefWidth="360.0" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets top="5.0" />
+               </GridPane.margin>
+            </TextArea>
+            <Label text="Empresa:" GridPane.rowIndex="1" />
+            <Label prefHeight="21.0" prefWidth="47.0" text="Data:" GridPane.columnIndex="3" />
+            <Label text="Nº Protocolo:" />
+            <Label text="Motivo:" GridPane.rowIndex="2" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </GridPane>
+      <HBox alignment="CENTER" layoutY="180.0" prefHeight="40.0" prefWidth="490.0" spacing="50.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addLog" text="Adicionar" />
+            <Button mnemonicParsing="false" onAction="#clearButtonAction" text="Limpar" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets left="3.0" top="3.0" />
+   </padding>
+</AnchorPane>

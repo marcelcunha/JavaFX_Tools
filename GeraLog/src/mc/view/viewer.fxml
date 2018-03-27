@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="490.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Separator layoutX="200.0" orientation="VERTICAL" prefHeight="220.0" />
+      <ListView fx:id="protocolsLV" prefHeight="220.0" prefWidth="200.0" />
+      <Pagination fx:id="pagination" layoutX="206.0" maxPageIndicatorCount="5" pageCount="0" prefHeight="220.0" prefWidth="284.0" />
+      <Group fx:id="group" layoutX="206.0" layoutY="10.0">
+         <children>
+            <Label layoutY="4.0" text="Empresa:" />
+            <Label layoutX="167.0" layoutY="4.0" text="Data:" />
+            <Label layoutY="31.0" text="Protocolo: " />
+            <Label layoutY="55.0" text="Descrição:" />
+            <TextField fx:id="corpTF" editable="false" layoutX="58.0" prefHeight="25.0" prefWidth="103.0" />
+            <TextField fx:id="protocolTF" editable="false" layoutX="58.0" layoutY="27.0" prefHeight="25.0" prefWidth="103.0" />
+            <TextArea fx:id="descTA" editable="false" layoutX="57.0" layoutY="55.0" prefHeight="97.0" prefWidth="223.0" wrapText="true" />
+            <TextField fx:id="dateTF" editable="false" layoutX="198.0" prefHeight="25.0" prefWidth="82.0" />
+         </children>
+      </Group>
+   </children>
+</AnchorPane>

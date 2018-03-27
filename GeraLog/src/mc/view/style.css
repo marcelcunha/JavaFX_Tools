@@ -1,0 +1,129 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24/01/2017, 21:12:34
+    Author     : Marcel
+*/
+.root{
+    -fx-background-color: #333333;
+    -fx-font-family:bodoni MT;
+}
+#title{
+    -fx-font-size: 22pt;
+    -fx-font-weight: bold;
+}
+
+.label{
+    -fx-text-fill: white;
+}
+
+/*.button{ 
+    -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-border-width: 3;
+    -fx-border-color: transparent;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20 10 20;
+
+}*/
+.button {
+    -fx-pref-width:90px;
+    -fx-padding: 5 5 5 5;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-border-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    // -fx-font-size: 11pt;
+    -fx-text-fill:linear-gradient(white, #d0d0d0);
+    -fx-font-weight:bold;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button:hover {
+    -fx-background-color: #3a3a3a;
+}
+
+.button:pressed, .button:default:hover:pressed {
+    -fx-background-color: black;
+}
+
+.button:focused {
+    -fx-border-color: white, white;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-insets: 1 1 1 1, 0;
+}
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+
+.button:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+}
+
+.button:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+}
+
+.tab-pane .tab
+{
+    -fx-background-color: #696969;
+}
+.tab .tab-label{  
+    -fx-text-fill: white;      
+    -fx-pref-width:80px; 
+    -fx-background-color:  #696969;
+}
+.tab:selected .tab-label {
+    -fx-font-weight: bold;
+    -fx-background-color:  #333333;
+
+}
+
+.tab-header-background{
+    -fx-background-color: #3f3f3f;
+}
+
+.list-cell:filled:selected:focused,
+  .list-cell:filled:selected,
+  .pagination .toggle-button:selected {
+    -fx-background-color: #ffcc33;
+    -fx-text-fill: white;
+}
+
+.list-cell:even { /* <=== changed to even */
+    -fx-background-color: #cccccc;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: darkorange;
+    -fx-text-fill: white;
+}
+
+.pagination .toggle-button:hover{
+    -fx-background-color: darkorange;
+    -fx-text-fill: white;
+}
