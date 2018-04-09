@@ -14,6 +14,7 @@ public class MainApp extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/resources/fxml/Scene.fxml"));
         
+        
         Scene scene = new Scene(root);
         
         stage.setTitle("Remove Subdiretórios");

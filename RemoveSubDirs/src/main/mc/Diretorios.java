@@ -34,6 +34,7 @@ public class Diretorios extends Observable {
     public void ajustaDiretorio(File dir) {
         percorreArvoreDiretorios(dir);
 
+        setStr("Iniciando\n\n\n");
         try {
             //Move os arquivos
             for (File f : filesList) {
@@ -51,6 +52,7 @@ public class Diretorios extends Observable {
 
                 apagaDiretorio(f);
             }
+            setStr("Fim!");
         } catch (IOException e) {
             setStr(e.getMessage());
             e.printStackTrace();       
@@ -128,4 +130,9 @@ public class Diretorios extends Observable {
             }
         }
     }
+
+    public String getStr() {
+        return str;
+    }
+    
 }
